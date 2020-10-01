@@ -1,24 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Cadastro UsuarioVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CadastroUsuarioVC" customModule="CadastroUsuario" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="pMX-SA-c6b">
+                                <rect key="frame" x="20" y="64" width="374" height="522"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XTE-u0-ORb">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="184"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8fd-Ca-zkp">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cpf" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i2E-ke-ElF">
+                                                <rect key="frame" x="0.0" y="50" width="374" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LgJ-gb-vPp">
+                                                <rect key="frame" x="0.0" y="100" width="374" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data de Nascimento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TVs-Pe-gKi">
+                                                <rect key="frame" x="0.0" y="150" width="374" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QK-mY-Rt2">
+                                        <rect key="frame" x="0.0" y="215" width="374" height="30"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <state key="normal" title="Buscar Endereço"/>
+                                        <connections>
+                                            <action selector="buscarEndereco:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4o-mh-Bo6"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="5eK-eV-OLe">
+                                        <rect key="frame" x="0.0" y="276" width="374" height="246"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Endereço" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RCB-7k-Cqp">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHs-RL-X6W">
+                                                <rect key="frame" x="0.0" y="53" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bairro" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jUN-6X-Hk2">
+                                                <rect key="frame" x="0.0" y="106" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2mx-nF-UXL">
+                                                <rect key="frame" x="0.0" y="159" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDl-DN-QZt">
+                                                <rect key="frame" x="0.0" y="212" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="RCB-7k-Cqp" secondAttribute="trailing" id="1oB-Pa-K6k"/>
+                                            <constraint firstAttribute="trailing" secondItem="GDl-DN-QZt" secondAttribute="trailing" id="85q-N4-mwi"/>
+                                            <constraint firstItem="jUN-6X-Hk2" firstAttribute="leading" secondItem="5eK-eV-OLe" secondAttribute="leading" id="AjL-rz-Jg5"/>
+                                            <constraint firstItem="QHs-RL-X6W" firstAttribute="leading" secondItem="5eK-eV-OLe" secondAttribute="leading" id="Cn8-YE-Bln"/>
+                                            <constraint firstAttribute="trailing" secondItem="2mx-nF-UXL" secondAttribute="trailing" id="Zdc-Wk-2AE"/>
+                                            <constraint firstItem="GDl-DN-QZt" firstAttribute="leading" secondItem="5eK-eV-OLe" secondAttribute="leading" id="akc-UZ-0gp"/>
+                                            <constraint firstAttribute="trailing" secondItem="jUN-6X-Hk2" secondAttribute="trailing" id="irX-rt-X6F"/>
+                                            <constraint firstAttribute="trailing" secondItem="QHs-RL-X6W" secondAttribute="trailing" id="lmK-k6-r6a"/>
+                                            <constraint firstItem="RCB-7k-Cqp" firstAttribute="leading" secondItem="5eK-eV-OLe" secondAttribute="leading" id="qUs-UZ-ePu"/>
+                                            <constraint firstItem="2mx-nF-UXL" firstAttribute="leading" secondItem="5eK-eV-OLe" secondAttribute="leading" id="tgf-qi-ywZ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJS-EA-d8i">
+                                <rect key="frame" x="20" y="812" width="374" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Cadastrar"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="pMX-SA-c6b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2hB-Jh-cO8"/>
+                            <constraint firstItem="pMX-SA-c6b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="EDG-f4-JeV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rJS-EA-d8i" secondAttribute="bottom" constant="20" id="WY2-hF-veE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pMX-SA-c6b" secondAttribute="trailing" constant="20" id="aVL-vy-ZOx"/>
+                            <constraint firstItem="rJS-EA-d8i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jpZ-ZP-tce"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rJS-EA-d8i" secondAttribute="trailing" constant="20" id="ynG-0J-lK9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnBuscarEndereco" destination="2QK-mY-Rt2" id="Uv3-yM-niD"/>
+                        <outlet property="btnCadastrar" destination="rJS-EA-d8i" id="TTo-4b-d2L"/>
+                        <outlet property="txtBairro" destination="jUN-6X-Hk2" id="VF8-4r-nDK"/>
+                        <outlet property="txtCidade" destination="2mx-nF-UXL" id="dMj-ZA-iVH"/>
+                        <outlet property="txtCpf" destination="i2E-ke-ElF" id="pbf-FD-eEL"/>
+                        <outlet property="txtDataNascimento" destination="TVs-Pe-gKi" id="0Td-Ba-rpg"/>
+                        <outlet property="txtEmail" destination="LgJ-gb-vPp" id="hht-dU-PLo"/>
+                        <outlet property="txtEndereco" destination="RCB-7k-Cqp" id="aQf-W2-ECQ"/>
+                        <outlet property="txtEstado" destination="GDl-DN-QZt" id="Vad-aa-QkW"/>
+                        <outlet property="txtNome" destination="8fd-Ca-zkp" id="RuV-y5-22V"/>
+                        <outlet property="txtNumero" destination="QHs-RL-X6W" id="WDh-cc-jTz"/>
+                        <segue destination="wSw-KW-qSh" kind="presentation" identifier="Endereco" modalPresentationStyle="fullScreen" id="nCM-NH-StK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-313" y="-179"/>
+        </scene>
+        <!--Endereco-->
+        <scene sceneID="Cod-l9-T4r">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Endereco" id="wSw-KW-qSh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hj-Cj-rhx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957" y="-64"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

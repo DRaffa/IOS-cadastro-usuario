@@ -15,6 +15,11 @@
 		533F547B2522A7F100E4F9EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533F54792522A7F100E4F9EA /* LaunchScreen.storyboard */; };
 		533F54862522A7F200E4F9EA /* CadastroUsuarioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533F54852522A7F200E4F9EA /* CadastroUsuarioTests.swift */; };
 		533F54912522A7F200E4F9EA /* CadastroUsuarioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533F54902522A7F200E4F9EA /* CadastroUsuarioUITests.swift */; };
+		533F54A22522A9CD00E4F9EA /* Endereco.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533F54A12522A9CD00E4F9EA /* Endereco.storyboard */; };
+		533F54AB2522BA1C00E4F9EA /* CadastroEnderecoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533F54AA2522BA1C00E4F9EA /* CadastroEnderecoVC.swift */; };
+		5340E1CD252543B100985664 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5340E1CC252543B100985664 /* Usuario.swift */; };
+		5340E1D2252543CE00985664 /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5340E1D1252543CE00985664 /* Endereco.swift */; };
+		5340E1D72525440200985664 /* CadastroUsuarioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5340E1D62525440200985664 /* CadastroUsuarioVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		533F548C2522A7F200E4F9EA /* CadastroUsuarioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CadastroUsuarioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		533F54902522A7F200E4F9EA /* CadastroUsuarioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroUsuarioUITests.swift; sourceTree = "<group>"; };
 		533F54922522A7F200E4F9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		533F54A12522A9CD00E4F9EA /* Endereco.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Endereco.storyboard; sourceTree = "<group>"; };
+		533F54AA2522BA1C00E4F9EA /* CadastroEnderecoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroEnderecoVC.swift; sourceTree = "<group>"; };
+		5340E1CC252543B100985664 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		5340E1D1252543CE00985664 /* Endereco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
+		5340E1D62525440200985664 /* CadastroUsuarioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroUsuarioVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +109,12 @@
 		533F546D2522A7F100E4F9EA /* CadastroUsuario */ = {
 			isa = PBXGroup;
 			children = (
+				5340E1CB2525439D00985664 /* Model */,
+				533F54A92522B9E100E4F9EA /* Views */,
 				533F546E2522A7F100E4F9EA /* AppDelegate.swift */,
 				533F54702522A7F100E4F9EA /* SceneDelegate.swift */,
 				533F54722522A7F100E4F9EA /* ViewController.swift */,
+				533F54A12522A9CD00E4F9EA /* Endereco.storyboard */,
 				533F54742522A7F100E4F9EA /* Main.storyboard */,
 				533F54772522A7F100E4F9EA /* Assets.xcassets */,
 				533F54792522A7F100E4F9EA /* LaunchScreen.storyboard */,
@@ -126,6 +139,24 @@
 				533F54922522A7F200E4F9EA /* Info.plist */,
 			);
 			path = CadastroUsuarioUITests;
+			sourceTree = "<group>";
+		};
+		533F54A92522B9E100E4F9EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				533F54AA2522BA1C00E4F9EA /* CadastroEnderecoVC.swift */,
+				5340E1D62525440200985664 /* CadastroUsuarioVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5340E1CB2525439D00985664 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5340E1CC252543B100985664 /* Usuario.swift */,
+				5340E1D1252543CE00985664 /* Endereco.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +265,7 @@
 				533F547B2522A7F100E4F9EA /* LaunchScreen.storyboard in Resources */,
 				533F54782522A7F100E4F9EA /* Assets.xcassets in Resources */,
 				533F54762522A7F100E4F9EA /* Main.storyboard in Resources */,
+				533F54A22522A9CD00E4F9EA /* Endereco.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5340E1D2252543CE00985664 /* Endereco.swift in Sources */,
 				533F54732522A7F100E4F9EA /* ViewController.swift in Sources */,
+				5340E1D72525440200985664 /* CadastroUsuarioVC.swift in Sources */,
 				533F546F2522A7F100E4F9EA /* AppDelegate.swift in Sources */,
 				533F54712522A7F100E4F9EA /* SceneDelegate.swift in Sources */,
+				5340E1CD252543B100985664 /* Usuario.swift in Sources */,
+				533F54AB2522BA1C00E4F9EA /* CadastroEnderecoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
